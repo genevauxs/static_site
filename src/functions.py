@@ -1,6 +1,8 @@
 from textnode import TextNode,TextType
 from htmlnode import LeafNode
 from re import findall
+import os
+import shutil
 
 def text_node_to_html_node(text_node: TextNode):
     if text_node.text_type.value not in TextType:
